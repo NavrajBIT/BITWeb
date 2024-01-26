@@ -68,8 +68,8 @@ const Tokenomics = () => {
             }}
           >
             <div></div>
-            <div>Amount</div>
-            <div>Percentage</div>
+            <div style={{ textAlign: "center" }}>Amount</div>
+            <div style={{ textAlign: "center" }}>Percentage</div>
           </div>
           {Object.keys(dist).map((data, index) => (
             <Datadisplay data={data} key={"tokenomics-" + index} />
@@ -96,11 +96,13 @@ const Datadisplay = ({ data }) => {
         display: "grid",
         gridTemplateColumns: "3fr 2fr 1fr",
         gap: "var(--padding-light)",
+        borderBottom: "1px solid var(--lightSteelBlue)",
+        padding: "var(--padding-light)",
       }}
     >
       <div>{data}</div>
-      <div>{dist[data]} million</div>
-      <div>{dist[data]} %</div>
+      <div style={{ textAlign: "center" }}>{dist[data]} million</div>
+      <div style={{ textAlign: "right" }}>{dist[data]} %</div>
     </div>
   );
 };

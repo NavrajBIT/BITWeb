@@ -60,17 +60,9 @@ const Roadmap = () => {
       >
         Roadmap
       </div>
-      <div
-        style={{
-          fontSize: "2rem",
-          fontWeight: "700",
-          color: "var(--text-bright)",
-        }}
-      >
-        Quarter 2024
-      </div>
+
       {milestones.map((texts, index) => (
-        <Milestone texts={texts} key={"milestone-" + index} />
+        <Milestone texts={texts} key={"milestone-" + index} index={index} />
       ))}
     </Page>
   );
@@ -78,7 +70,7 @@ const Roadmap = () => {
 
 export default Roadmap;
 
-const Milestone = ({ texts }) => {
+const Milestone = ({ texts, index }) => {
   return (
     <div
       style={{
@@ -88,18 +80,28 @@ const Milestone = ({ texts }) => {
         padding: "var(--padding-light)",
         borderRadius: "var(--border-radius)",
         width: "100%",
-        maxWidth: "var(--max-width-content)",
+        // maxWidth: "var(--max-width-content)",
         alignItems: "center",
+        flexWrap: "wrap",
       }}
     >
       <div
         style={{
-          minHeight: "100px",
-          width: "30px",
-          borderRadius: "20px",
-          background: "var(--lightSteelBlue)",
+          height: "150px",
+          width: "150px",
+          borderRadius: "100px",
+          background: "var(--pinkish-purple)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "1.5rem",
+          fontWeight: "bold",
+          color: "var(--text-bright)",
+          textAlign: "center",
         }}
-      />
+      >
+        Quarter {index + 1}
+      </div>
       <div
         style={{
           display: "flex",
@@ -118,10 +120,10 @@ const Milestone = ({ texts }) => {
           >
             <div
               style={{
-                width: "20px",
-                height: "20px",
+                width: "15px",
+                height: "15px",
                 borderRadius: "20px",
-                background: "var(--pinkish-purple)",
+                background: "var(--lightSteelBlue)",
               }}
             />
             {text}

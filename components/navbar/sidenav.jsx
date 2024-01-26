@@ -1,6 +1,7 @@
 import style from "./navbar.module.css";
 import Image from "next/image";
 import productdata from "../subcomponents/productdata";
+import Link from "next/link";
 
 const Sidenav = ({ close }) => {
   return (
@@ -13,14 +14,15 @@ const Sidenav = ({ close }) => {
             tagline={productdata[product]["tagline"]}
             im={productdata[product]["im"]}
             key={"nav-" + index}
+            id={product}
           />
         ))}
         <div className={style.sidenavheading}>About Us</div>
-        <Product title="About Us" />
-        <Product title="Our Team" />
-        <Product title="Our Partners" />
-        <Product title="Roadmap" />
-        <Product title="Tokenomics" />
+        <Product title="About Us" id={"mission"} />
+        <Product title="Our Team" id="team" />
+        <Product title="Our Partners" id="partners" />
+        <Product title="Roadmap" id={"roadmap"} />
+        <Product title="Tokenomics" id={"tokenomics"} />
       </div>
     </div>
   );
@@ -28,9 +30,9 @@ const Sidenav = ({ close }) => {
 
 export default Sidenav;
 
-const Product = ({ title, tagline, im }) => {
+const Product = ({ title, tagline, im, id }) => {
   return (
-    <div className={style.product}>
+    <Link className={style.product} href={`#${id}`}>
       <div>
         <div className={style.producttitle}>{title}</div>
         <div className={style.productdescription}>{tagline}</div>
@@ -40,6 +42,6 @@ const Product = ({ title, tagline, im }) => {
           <Image src={im} height={80} width={80} alt={title} />
         </div>
       )}
-    </div>
+    </Link>
   );
 };
