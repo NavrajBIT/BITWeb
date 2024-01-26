@@ -1,0 +1,62 @@
+:root {
+  --max-width: 1400px;
+  --max-width-content: 500px;
+  --nav-height: 120px;
+  --min-height-page: 100vh;
+  --padding-main: 20px;
+  --padding-light: 10px;
+  --bgColor: #111112;
+  --bg-light: #1d1d1f;
+  --bg-dark: #000000;
+
+  --text-bright: white;
+  --text: rgb(209, 205, 223);
+  --text-light: rgb(182, 184, 206);
+
+  --border-radius: 10px;
+  --border-radius-light: 5px;
+
+  --footerBg: #000000;
+  --lightGrey: #f1f1f2;
+  --softGreen: #71c391;
+  --lightSteelBlue: #6492cc;
+  --pinkish-purple: #913ac4;
+  --inputTextColor: #bdbdbd;
+  --purpleGreenGradient: linear-gradient(
+    45deg,
+    #00e7e7,
+    #4597e3,
+    #8946df,
+    #4597e3,
+    #00e7e7
+  );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--text);
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}

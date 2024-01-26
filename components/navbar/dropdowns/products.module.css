@@ -1,0 +1,22 @@
+.productscontainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-main);
+}
+
+.product {
+  display: flex;
+  gap: var(--padding-main);
+  align-items: center;
+  padding: var(--padding-light);
+  border-radius: var(--border-radius);
+}
+
+.productdescription {
+  font-size: 0.75rem;
+}
+
+.product:hover {
+  background: var(--purpleGreenGradient);
+  color: var(--text-bright);
+}

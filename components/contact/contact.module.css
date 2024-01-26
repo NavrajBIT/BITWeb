@@ -1,0 +1,15 @@
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-light);
+  border: 2px solid var(--text-light);
+  border-radius: var(--border-radius);
+  padding: var(--padding-main);
+  max-width: var(--max-width-content);
+}
+
+.contactform input,
+.contactform textarea {
+  padding: var(--padding-light);
+  font-size: 1.25rem;
+}

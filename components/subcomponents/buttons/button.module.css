@@ -1,0 +1,80 @@
+.navbutton {
+  padding: var(--padding-main);
+  font-size: 1.25rem;
+  cursor: context-menu;
+  border-radius: var(--border-radius-light);
+  display: flex;
+  align-items: flex-end;
+  gap: var(--padding-light);
+  position: relative;
+}
+
+.navbutton:hover {
+  background-color: var(--bg-dark);
+  animation: brighten 0.5s;
+  color: var(--text-bright);
+}
+
+@keyframes brighten {
+  from {
+    background-color: transparent;
+    color: var(--text);
+  }
+  to {
+    background-color: var(--bg-dark);
+    color: var(--text-bright);
+  }
+}
+
+.downarrow {
+  font-size: 1rem;
+  transform: rotate(90deg) scaleY(1.5);
+}
+
+.primarybutton {
+  color: var(--text-bright);
+  padding: var(--padding-light);
+  font-size: 1.5rem;
+  background: var(--purpleGreenGradient);
+  border-radius: var(--border-radius-light);
+  background-size: 200% 100%;
+  text-align: center;
+}
+
+.primarybutton:hover {
+  animation: grad 2s linear infinite;
+  box-shadow: 0 0 10px 2px var(--text-light);
+  outline: 2px solid var(--text-bright);
+}
+
+@keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.secondarybutton {
+  color: var(--text);
+  padding: var(--padding-light);
+  font-size: 1.5rem;
+  background: var(--bg-light);
+  border-radius: var(--border-radius-light);
+}
+
+.secondarybutton:hover {
+  color: var(--text-bright);
+  box-shadow: 0 0 10px 2px var(--text-light);
+  /* outline: 2px solid var(--text-bright); */
+}
