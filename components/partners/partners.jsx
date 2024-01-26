@@ -49,6 +49,7 @@ const Partners = () => {
               style={{
                 borderRadius: "var(--border-radius)",
               }}
+              alt="partner"
             />
           </div>
         ))}

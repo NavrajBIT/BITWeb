@@ -80,6 +80,7 @@ const Tokenomics = () => {
           width={300}
           height={250}
           style={{ maxWidth: "100%", borderRadius: "var(--border-radius)" }}
+          alt="token distribution"
         />
       </div>
     </Page>
