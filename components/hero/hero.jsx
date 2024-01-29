@@ -25,25 +25,24 @@ const Hero = () => {
       <div
         style={{
           maxWidth: "var(--max-width-content)",
-          fontSize: "4rem",
+          fontSize: "3rem",
           fontWeight: "700",
           color: "var(--text-bright)",
         }}
       >
-        Web3 for the Real World
+        Transforming Tomorrow with Innovative Solutions
       </div>
       <div
         style={{
           maxWidth: "var(--max-width-content)",
+          textAlign: "justify",
         }}
       >
         Welcome to Beyond Imagination Tech, where innovation meets limitless
         possibilities. Explore a world of cutting-edge solutions and
         transformative technologies. From pioneering blockchain applications to
         revolutionary environmental platforms, we are redefining the future.
-        Join us on a journey beyond boundaries, where imagination knows no
-        limits. Discover, innovate, and shape the future with Beyond Imagination
-        Tech.
+        Discover, innovate, and shape the future with Beyond Imagination Tech.
       </div>
       <div
         style={{

@@ -9,7 +9,10 @@ const Footer = () => {
           width: "100%",
           maxWidth: "var(--max-width)",
           margin: "auto",
-          padding: "var(--padding-main)",
+          padding: "var(--nav-height)  var(--padding-main)",
+          display: "flex",
+          flexDirection: "column",
+          gap: "var(--nav-height)",
         }}
       >
         <div
@@ -20,13 +23,28 @@ const Footer = () => {
             justifyContent: "space-between",
           }}
         >
-          <Image
-            src={"/logo.png"}
-            height={60}
-            width={120}
-            alt="Beyond Imagination Technologies"
-          />
-          <div style={{ display: "flex", gap: "var(--padding-light)" }}>
+          <div>
+            <Image
+              src={"/logo.png"}
+              height={60}
+              width={120}
+              alt="Beyond Imagination Technologies"
+            />
+            <div
+              style={{ width: "100%", maxWidth: "var(--max-width-content)" }}
+            >
+              M03 Laffa restaurant building, Sheikh Khalifa Bin Zayed St - opp.
+              Burjuman Mall, Dubai, United Arab Emirates
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              gap: "var(--padding-main)",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Social
               title={"instagram"}
               link={"https://www.instagram.com/bitindiaofficial/"}

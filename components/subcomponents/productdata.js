@@ -1,7 +1,8 @@
 const productdata = {
   Bitmemoir: {
     tagline: "Issue.Store.Verify.Retrieve",
-    im: "/products/hero_diamond_2.svg",
+    desc: "Bringing a paradigm shift in the traditional approach to document management and sharing, this NFT utility platform,  leverages blockchain technology to create a decentralized way to secure digital records and create a tamper-proof infrastructure.",
+    im: "/products/icon128.png",
     link: "https://bitmemoir.com",
     usecases: [
       {
@@ -48,6 +49,7 @@ const productdata = {
   },
   BitWallet: {
     tagline: "Your Secure Digital Wallet",
+    desc: "Your go-to non-custodial digital wallet that ensures the safety of your digital assets, offering a seamless and user-friendly experience.",
     im: "/products/icon128.png",
     link: "https://bitbhoomi.com/wallet",
     usecases: [
@@ -85,7 +87,8 @@ const productdata = {
   },
   BitBhoomi: {
     tagline: "Where Technology Meets Sustainability",
-    im: "/products/favicon.ico",
+    desc: "A revolutionary platform that harnesses the power of blockchain to bring unprecedented transparency to tree plantation activities.",
+    im: "/products/bitbhoomi.png",
     link: "https://bitbhoomi.com",
     usecases: [
       {
@@ -125,13 +128,13 @@ const productdata = {
       },
 
       {
-        title: "Urban Reforestation: ",
+        title: "Urban Reforestation:",
         desc: "Report on the planting and growth of trees in open spaces within cities",
         im: "https://images.pexels.com/photos/5876663/pexels-photo-5876663.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
 
       {
-        title: "Environmental Impact Monitoring: ",
+        title: "Environmental Impact Monitoring:",
         desc: "Track factors such as air quality, soil health, and biodiversity",
         im: "https://images.pexels.com/photos/1230157/pexels-photo-1230157.jpeg?auto=compress&cs=tinysrgb&w=600",
       },
@@ -139,8 +142,9 @@ const productdata = {
   },
   BITDPP: {
     tagline: "The New-Age Digital Product Passport",
-    im: "/products/hero_diamond_2.svg",
+    im: "/products/icon128.png",
     link: "https://bitmemoir.com",
+    desc: "A visionary concept that aims to revolutionize the perspective towards daily-use products by placing a spotlight on sustainability and the intricate journey they undertake from their source to the consumer's hands.",
     usecases: [
       {
         title: "1. Food and Beverage",

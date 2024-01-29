@@ -33,12 +33,14 @@ const Contact = () => {
       >
         Contact Us
       </div>
-      <div className={style.contactform}>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Email" />
-        <textarea type="text" placeholder="Message" rows={4} />
-        <Button title={"Send"} variant="primary" />
-      </div>
+      <form className={style.contactform}>
+        <input type="text" placeholder="Name" required />
+        <input type="text" placeholder="Surname" required />
+        <input type="text" placeholder="Company/Organization" />
+        <input type="email" placeholder="Email" required />
+        <textarea type="text" placeholder="Message" rows={4} required />
+        <Button title={"Submit"} variant="primary" />
+      </form>
     </Page>
   );
 };

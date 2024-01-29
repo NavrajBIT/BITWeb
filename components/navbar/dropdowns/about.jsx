@@ -6,9 +6,8 @@ const About = () => {
   return (
     <Dropdown>
       <div className={style.productscontainer}>
-        <Product title="Our Vision" id="mission" />
-        <Product title="Our Team" id="team" />
-        <Product title="Our Partners" id="partners" />
+        <Product title="Team" id="team" />
+        <Product title="Partners" id="partners" />
         <Product title="Roadmap" id="roadmap" />
         <Product title="Tokenomics" id="tokenomics" />
       </div>

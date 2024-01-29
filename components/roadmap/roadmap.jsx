@@ -58,7 +58,7 @@ const Roadmap = () => {
           color: "var(--text-bright)",
         }}
       >
-        Roadmap
+        Roadmap - 2024
       </div>
 
       {milestones.map((texts, index) => (

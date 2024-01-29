@@ -32,6 +32,9 @@ const Product = ({ title, orientation }) => {
           className={style.productimage}
           alt={"BIT"}
         />
+        <div style={{ maxWidth: "var(--max-width-content)" }}>
+          {productdata[title]["desc"]}
+        </div>
       </div>
       <div className={style.usecases}>
         {productdata[title]["usecases"].map((usecase, index) => (

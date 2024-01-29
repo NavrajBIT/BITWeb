@@ -36,11 +36,11 @@ const Mission = () => {
           margin: "auto",
         }}
       >
-        Our vision is to pioneer the next frontier of technological evolution by
-        designing revolutionary blockchain-based products. We are committed to
-        crafting solutions that transcend imagination, addressing real-world
-        challenges with innovation, transparency, and a commitment to creating
-        lasting positive impact.
+        Pioneer the next frontier of technological evolution by designing
+        revolutionary blockchain-based products. We are committed to crafting
+        solutions that transcend imagination, addressing real-world challenges
+        with innovation, transparency, and a commitment to creating lasting
+        positive impact.
       </div>
       <Image
         src={"/bg2.jpg"}

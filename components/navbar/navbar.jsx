@@ -39,7 +39,7 @@ const Navbar = () => {
         />
         <div className={style.navitemscontainer}>
           <Navbutton title="Products" drop={<Products />} />
-          <Navbutton title="Usecases" drop={<Usecases />} />
+          <Navbutton title="Use Cases" link="Bitmemoir" />
           <Navbutton title="About" drop={<About />} />
         </div>
         <Menu />

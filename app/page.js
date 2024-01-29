@@ -16,7 +16,7 @@ export default function Home() {
       <Products />
       <Bitmemoir />
       <Roadmap />
-      <Tokenomics />
+      {/* <Tokenomics /> */}
       <Partners />
       <Team />
       <Contact />

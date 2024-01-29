@@ -2,12 +2,12 @@ import Page from "../subcomponents/containers/page";
 import Image from "next/image";
 
 const dist = {
-  Community: 10,
+  "Community Sale": 10,
   Team: 15,
-  Development: 20,
-  "Sales and Marketing": 5,
-  Advisors: 10,
-  "Liquidity & Airdrops": 5,
+  Development: 15,
+  "Sales and Marketing": 10,
+  Advisors: 5,
+  "Liquidity & Airdrops": 10,
   "Future Fund Raise": 25,
   "Foundation Endowment": 10,
   "Total Supply": 100,
