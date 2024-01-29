@@ -38,25 +38,25 @@ export const teamData = [
     },
     img: "/about/team/radhika.png",
   },
-  {
-    name: "Ankita Rai",
-    designation: {
-      es: "Ejecutiva en Marketing",
-      en: "Marketing Executive",
-      ar: "Marketing Executive",
-    },
-    img: "/about/team/ankita.png",
-  },
+  // {
+  //   name: "Ankita Rai",
+  //   designation: {
+  //     es: "Ejecutiva en Marketing",
+  //     en: "Marketing Executive",
+  //     ar: "Marketing Executive",
+  //   },
+  //   img: "/about/team/ankita.png",
+  // },
 
-  {
-    name: "R.K Kedia",
-    designation: {
-      en: "HR Consultant",
-      es: "Consultor en RRHH",
-      ar: "HR Consultant",
-    },
-    img: "/about/team/rk.png",
-  },
+  // {
+  //   name: "R.K Kedia",
+  //   designation: {
+  //     en: "HR Consultant",
+  //     es: "Consultor en RRHH",
+  //     ar: "HR Consultant",
+  //   },
+  //   img: "/about/team/rk.png",
+  // },
   {
     name: "Navraj Sharma",
     designation: {
@@ -84,15 +84,15 @@ export const teamData = [
     },
     img: "/about/team/hemant.png",
   },
-  {
-    name: "Vivek Tyagi",
-    designation: {
-      en: "Blockchain Developer",
-      es: "Desarrollador Blockchain",
-      ar: "Blockchain Developer",
-    },
-    img: "/about/team/vivek.png",
-  },
+  // {
+  //   name: "Vivek Tyagi",
+  //   designation: {
+  //     en: "Blockchain Developer",
+  //     es: "Desarrollador Blockchain",
+  //     ar: "Blockchain Developer",
+  //   },
+  //   img: "/about/team/vivek.png",
+  // },
   {
     name: "Rishab Dhar",
     designation: {
@@ -110,6 +110,15 @@ export const teamData = [
       ar: "Blockchain Developer",
     },
     img: "/about/team/tanuj.jpg",
+  },
+  {
+    name: "Gitanjali Sharma",
+    designation: {
+      en: "Climate Change Executive",
+      es: "Desarrollador Blockchain",
+      ar: "Blockchain Developer",
+    },
+    img: "/about/team/gitanjali.jpg",
   },
 ];
 

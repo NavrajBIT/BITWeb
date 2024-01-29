@@ -3,22 +3,21 @@ import Page from "../subcomponents/containers/page";
 const Roadmap = () => {
   const milestones = [
     [
-      "Bitmemoir Beta Launch",
+      "Bitmemoir Mainnet Launch",
       "Bitmemoir Integration Framework",
       "Bitwallet Beta Launch",
       "BitBhoomi MVP Launch",
+      "BitBhoomi Beta Launch",
     ],
 
     [
-      "Bitmemoir Mainnet Launch",
-      "BitBhoomi Beta Launch",
       "Digital Product PassPort(DPP) MVP launch",
       "IDO Token Launch - Community Sale",
       "Token Listing on Decentralized Exchange",
+      "BitBhoomi Mainnet Launch",
     ],
 
     [
-      "BitBhoomi Mainnet Launch",
       "BitWallet Mainnet Launch",
       "Digital Product PassPort(DPP) Beta launch",
       "Token listing on Centralized Exchanges",
