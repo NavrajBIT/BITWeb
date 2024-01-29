@@ -9,7 +9,7 @@ const About = () => {
         <Product title="Team" id="team" />
         <Product title="Partners" id="partners" />
         <Product title="Roadmap" id="roadmap" />
-        <Product title="Tokenomics" id="tokenomics" />
+        {/* <Product title="Tokenomics" id="tokenomics" /> */}
       </div>
     </Dropdown>
   );
