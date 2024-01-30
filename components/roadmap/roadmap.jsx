@@ -3,30 +3,80 @@ import Page from "../subcomponents/containers/page";
 const Roadmap = () => {
   const milestones = [
     [
-      "Bitmemoir Mainnet Launch",
-      "Bitmemoir Integration Framework",
-      "Bitwallet Beta Launch",
-      "BitBhoomi MVP Launch",
-      "BitBhoomi Beta Launch",
+      {
+        title: "Bitmemoir Mainnet Launch",
+        desc: "The Bitmemoir platform will officially go live. People will be able to use it to issue, store, and share their sensitive documents and credentials. ",
+      },
+      {
+        title: "Bitmemoir Integration Framework",
+        desc: "Integration into other systems or platforms will be enabled, making the platform more versatile and accessible.",
+      },
+      {
+        title: "Bitwallet Beta Launch",
+        desc: "The beta version of Bitwallet will be released which will allow users to store and manage their digital assets securely.",
+      },
+      {
+        title: "BitBhoomi MVP Launch",
+        desc: "A basic version of BitBhoomi, will be launched, showcasing the core features and functionality of the platform.",
+      },
+      {
+        title: "BitBhoomi Beta Launch",
+        desc: "The beta version of BitBhoomi will be released, allowing users to test and provide feedback on the platform before its official launch.",
+      },
     ],
-
     [
-      "Digital Product PassPort(DPP) MVP launch",
-      "IDO Token Launch - Community Sale",
-      "Token Listing on Decentralized Exchange",
-      "BitBhoomi Mainnet Launch",
+      {
+        title: "Digital Product Passport (DPP) MVP Launch",
+        desc: "This illustrates the launch of the minimum viable product of DPP.",
+      },
+      {
+        title: "IDO Token Launch (Community Sale)",
+        desc: "The projects token will be offered for sale to the community through a decentralized exchange. This will allow community members to participate in the projects growth",
+      },
+      {
+        title: "Token Listing on Decentralized Exchange",
+        desc: "After the IDO, the projects token will be listed on a decentralized exchange, making it available for trading among users.",
+      },
+      {
+        title: "BitBhoomi Mainnet Launch",
+        desc: "This is the official launch of the BitBhoomi platform on the mainnet, meaning it will be fully operational and accessible to users.",
+      },
     ],
-
     [
-      "BitWallet Mainnet Launch",
-      "Digital Product PassPort(DPP) Beta launch",
-      "Token listing on Centralized Exchanges",
+      {
+        title: "BitWallet Mainnet Launch",
+        desc: "Similar to the BitBhoomi Mainnet Launch, this refers to the official launch of the BitWallet platform on the mainnet.",
+      },
+      {
+        title: "Digital Product Passport (DPP) Beta Launch",
+        desc: "The beta version of DPP will be released, allowing users to test and provide feedback on the system before its official launch.",
+      },
+      {
+        title: "Token Listing on Centralized Exchanges",
+        desc: "The projects token will be listed on centralized exchanges, providing more opportunities for users to trade and access the token.",
+      },
     ],
-
     [
-      "Digital Product PassPort(DPP) Mainnet launch",
-      "NFT Trading Platform Launch for BitBhoomi",
-      "Token listing on Centralized Exchanges",
+      {
+        title: "BitBhoomi Full Launch",
+        desc: "This is the official launch of the complete and fully functional BitBhoomi platform. Users will be able to utilize all the features and benefits of this revolutionary platform.",
+      },
+      {
+        title: "Bitmemoir Enhancements",
+        desc: "During this quarter, Bitmemoir will undergo enhancements and improvements based on user feedback and market demands. This will make the platform even more robust and user-friendly.",
+      },
+      {
+        title: "BitWallet Enhancements",
+        desc: "Similar to Bitmemoir, BitWallet will also receive enhancements and updates to improve its functionality and user experience",
+      },
+      {
+        title: "DPP Mainnet Launch",
+        desc: "The official launch of the Digital Product Passport (DPP) on the mainnet. Users will be able to utilize the full capabilities of DPP for verifying the authenticity and ownership of digital products",
+      },
+      {
+        title: "Community Engagement and Partnerships",
+        desc: "In Quarter 4, there will be a focus on engaging with the community and forming partnerships to further strengthen the BIT’s ecosystem and reach.",
+      },
     ],
   ];
   return (
@@ -74,22 +124,23 @@ const Milestone = ({ texts, index }) => {
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         gap: "var(--padding-light)",
         background: "rgba(0,0,0,0.9)",
         padding: "var(--padding-light)",
         borderRadius: "var(--border-radius)",
         width: "100%",
         // maxWidth: "var(--max-width-content)",
-        alignItems: "center",
+        alignItems: "flex-start",
         flexWrap: "wrap",
       }}
     >
       <div
         style={{
-          height: "150px",
-          width: "150px",
-          borderRadius: "100px",
+          width: "100%",
+          borderRadius: "var(--border-radius-light)",
           background: "var(--pinkish-purple)",
+          background: "var(--purpleGreenGradient)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -97,6 +148,7 @@ const Milestone = ({ texts, index }) => {
           fontWeight: "bold",
           color: "var(--text-bright)",
           textAlign: "center",
+          padding: "var(--padding-main)",
         }}
       >
         Quarter {index + 1}
@@ -110,22 +162,41 @@ const Milestone = ({ texts, index }) => {
       >
         {texts.map((text, index) => (
           <div
-            key={"mile-text-" + index + texts[0]}
+            key={"mile-text-" + index + texts[0]["title"]}
             style={{
               display: "flex",
               alignItems: "center",
               gap: "var(--padding-light)",
             }}
           >
-            <div
-              style={{
-                width: "15px",
-                height: "15px",
-                borderRadius: "20px",
-                background: "var(--lightSteelBlue)",
-              }}
-            />
-            {text}
+            <div>
+              <div
+                style={{
+                  fontWeight: "700",
+                  color: "var(--text-bright)",
+                  display: "flex",
+                  gap: "var(--padding-light)",
+                  alignItems: "center",
+                }}
+              >
+                <div
+                  style={{
+                    width: "15px",
+                    height: "15px",
+                    borderRadius: "20px",
+                    background: "var(--lightSteelBlue)",
+                  }}
+                />
+                {text.title}
+              </div>
+              <div
+                style={{
+                  textAlign: "justify",
+                }}
+              >
+                {text.desc}
+              </div>
+            </div>
           </div>
         ))}
       </div>

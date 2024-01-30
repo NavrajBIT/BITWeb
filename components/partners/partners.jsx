@@ -2,7 +2,7 @@ import Page from "../subcomponents/containers/page";
 import Image from "next/image";
 
 const Partners = () => {
-  const partnerArray = Array.from(Array(15), (_, index) => index + 1);
+  const partnerArray = Array.from(Array(14), (_, index) => index + 1);
   return (
     <Page
       id="partners"
@@ -37,7 +37,10 @@ const Partners = () => {
           gap: "var(--padding-light)",
           flexWrap: "wrap",
           alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "space-around",
+          background: "var(--text-bright)",
+          padding: "var(--padding-main)",
+          borderRadius: "var(--border-radius)",
         }}
       >
         {partnerArray.map((file, index) => (
